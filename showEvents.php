@@ -59,6 +59,7 @@ else{
     $array[] = $row4;
     $array[] = $row5;
 
+    print_r($array);
     echo json_encode($array);
 
 } 
