@@ -6,9 +6,9 @@ header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With, Content-Type");
 header("Access-Control-Allow-Credentials: true");
 
-$servername = "localhost"; $username = "jimmy"; $password = "Bao121192";
+$servername = "localhost"; $username = "ba6e0ff00803b6"; $password = "7da5be5a";
 
-$dbname = "impetus_db";
+$dbname = "heroku_b8290af623dd61c";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {

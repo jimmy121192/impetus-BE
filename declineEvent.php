@@ -11,9 +11,9 @@ $user_id = $_SESSION["user_id"];
 $event_id = $_GET['event_id'];
 
 
-$servername = "localhost"; $username = "jimmy"; $password = "Bao121192";
+$servername = "localhost"; $username = "ba6e0ff00803b6"; $password = "7da5be5a";
 
-$dbname = "impetus_db";
+$dbname = "heroku_b8290af623dd61c";
 
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
