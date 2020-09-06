@@ -61,6 +61,7 @@ else{
     $array[] = $row5;
 
     echo json_encode($array);
+    json_last_error($array) ; 
 
 } 
 
