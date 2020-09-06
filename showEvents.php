@@ -30,7 +30,7 @@ if (!$conn) {
 }
 else{
 
-    echo ("connect successfully!");
+    echo ("MySQL connect successfully!");
 
     $pst = new DateTimeZone('America/Los_Angeles');
     $current = new DateTime('',$pst); // first argument uses strtotime parsing
@@ -61,7 +61,7 @@ else{
     $array[] = $row4;
     $array[] = $row5;
 
-    print_r($array);
+    //print_r($array);
 
     echo json_encode($array);
 
