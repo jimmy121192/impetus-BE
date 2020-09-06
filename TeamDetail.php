@@ -32,7 +32,7 @@ else{
     $array[] = $row;
     $array[] = $row2;
 
-    echo json_encode($array);
+    echo json_encode($array,JSON_INVALID_UTF8_IGNORE);
 } 
 mysqli_close($conn);
 

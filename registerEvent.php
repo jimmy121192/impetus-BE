@@ -44,7 +44,7 @@ else{
     }
 
     if($res2){
-        echo json_encode($data['register']['event_id']);
+        echo json_encode($data['register']['event_id'],JSON_INVALID_UTF8_IGNORE);
     } else {
         echo json_encode(false);
     

@@ -40,7 +40,7 @@ else{
     $row = mysqli_fetch_all($res, MYSQLI_ASSOC);
 
 
-    echo json_encode($row);
+    echo json_encode($row,JSON_INVALID_UTF8_IGNORE);
 } 
 
 
