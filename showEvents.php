@@ -60,8 +60,8 @@ else{
     $array[] = $row4;
     $array[] = $row5;
 
-    echo json_encode($array);
-    json_last_error($array) ; 
+    echo json_encode($array,JSON_INVALID_UTF8_IGNORE);
+
 
 } 
 
