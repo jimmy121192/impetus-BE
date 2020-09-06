@@ -19,7 +19,7 @@ $post = $data['post'];
 
 $tag = json_encode($post['tagsArray']);
 
-$servername = "localhost"; $username = "ba6e0ff00803b6"; $password = "7da5be5a"; $dbname = "heroku_b8290af623dd61c";
+$servername = "us-cdbr-east-02.cleardb.com"; $username = "ba6e0ff00803b6"; $password = "7da5be5a"; $dbname = "heroku_b8290af623dd61c";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

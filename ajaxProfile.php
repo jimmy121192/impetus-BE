@@ -15,7 +15,7 @@ header("Access-Control-Allow-Credentials: true");
   //$email = 'hoangbao1992@gmail.com';
   //$user_id = 1;
 
-$servername = "localhost"; $username = "ba6e0ff00803b6"; $password = "7da5be5a";
+$servername = "us-cdbr-east-02.cleardb.com"; $username = "ba6e0ff00803b6"; $password = "7da5be5a";
 
 $dbname = "heroku_b8290af623dd61c";
 
