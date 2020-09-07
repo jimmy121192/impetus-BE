@@ -5,7 +5,7 @@ header('Access-Control-Allow-Origin: https://impetus.netlify.app');
 header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With, Content-Type");
 header("Access-Control-Allow-Credentials: true");
-
+session_start();
 
 $data = json_decode(file_get_contents("php://input"),true);
 
@@ -36,14 +36,14 @@ else{
 
     if(password_verify($userPassword,$row["hashed_password"])){
 
-        session_start();
+        
         $_SESSION["user_email"] = $email;
         $_SESSION["username"] = $row["firstname"];
         $_SESSION["user_id"] = $row["user_id"];
 
         $resp = array(true,$_SESSION["username"],$email, $row["avatar"], $row["user_id"], $row["type"], $row["team"], $row["score"], $row["rank"]);
 
-        echo json_encode($resp);
+        echo json_encode($resp,JSON_INVALID_UTF8_IGNORE);
    } else {
 
     echo json_encode("Failed!");

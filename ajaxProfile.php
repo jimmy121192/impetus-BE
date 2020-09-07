@@ -9,11 +9,11 @@ header("Access-Control-Allow-Credentials: true");
 
   session_start();  
 
-  $email = $_SESSION["user_email"];
-  $user_id = $_SESSION["user_id"];
+  // $email = $_SESSION["user_email"];
+  // $user_id = $_SESSION["user_id"];
 
-  //$email = 'hoangbao1992@gmail.com';
-  //$user_id = 1;
+  $email = 'hoangbao1992@gmail.com';
+  $user_id = 1;
 
 $servername = "us-cdbr-east-02.cleardb.com"; $username = "ba6e0ff00803b6"; $password = "7da5be5a";
 
